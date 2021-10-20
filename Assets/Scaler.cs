@@ -7,16 +7,11 @@ public class Scaler : MonoBehaviour
     public InputField input;
     public GameObject scaleThingIdk;
     float thing;
-    
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
-    void Update()
+    public void Scale()
     {
-        thing = float.Parse(input.text);
+            thing = float.Parse(input.text);
         scaleThingIdk.transform.localScale = new Vector3(thing, thing, thing);
     }
 }
